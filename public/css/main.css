@@ -1,0 +1,224 @@
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 500;
+}
+h2::selection {
+    background: none;
+}
+
+.bottomGradient {
+    height: 8vh;
+    width: 100%;
+    background: linear-gradient(to top, #141414, transparent);
+    z-index: 1;
+}
+main .container {
+    width: 100%;
+    background: #141414;
+    z-index: 2;
+    position: relative;
+}
+
+main .container .mainListPhim {
+    width: 100%;
+    height: 176px;
+    position: relative;
+    margin-bottom: 3vw;
+}
+
+.container .mainListPhim .listPhim {
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    width: 100%;
+}
+.mainListPhim1 {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 3vw;
+}
+.listPhim1 {
+    position: absolute;
+    top: -17vh;
+    left: 0;
+    width: 100%;
+}
+.tenTheLoai {
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tenTheLoai h2 {
+    line-height: 1.3;
+    margin: 0;
+    color: #dcdcdc;
+}
+
+.listPhim:hover .tenTheLoai ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.listPhim:hover .tenTheLoai ul li {
+    width: 16px;
+    height: 2.5px;
+    background-color: gray;
+    margin: 0 1px;
+    transition: 0.5s;
+}
+
+.listPhim:hover .tenTheLoai ul li.active {
+    background-color: aliceblue;
+    opacity: 0.9;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.slider ul {
+    position: absolute;
+    top: 0;
+    padding-left: 4%;
+    /*  */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slider ul li {
+    height: 100%;
+    width: 15vw;
+    padding-right: 0.3vw;
+    border-radius: 2px;
+    /* overflow: hidden; */
+}
+
+.slider ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    padding-bottom: 2px;
+}
+.slider ul li:hover img {
+    border-radius: 20px;
+}
+
+.slider button {
+    display: none;
+}
+.slider:hover button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    border: none;
+    height: 100%;
+    background: hsla(0, 0%, 8%, .6);
+    z-index: 3;
+}
+
+.slider:hover button.prev {
+    left: 0;
+    width: 3.7%;
+    border: none;
+}
+
+.slider:hover button.next  {
+    width: 3.25%;
+    right: 0;
+    border: none;
+}
+.slider button:hover {
+    background: hsla(0, 0%, 8%, .7);
+}
+
+.slider button svg {
+    opacity: 0.8;
+}
+
+
+
+/* CSS poster search */
+.posterSearch {
+    position: relative;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 60vh;
+}
+.posterSearch .anhNen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+.posterSearch .anhNen li {
+    width: 20%;
+    height: 100%;
+}
+.posterSearch .anhNen li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.searchBarContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+}
+
+.searchBarContainer #search-bar {
+    display: block;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    border-radius: 50px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    outline: none;
+    padding-left: 40px;
+}
+
+.searchBarContainer input:hover {
+    box-shadow: 0px 1px 3px rgb(192, 185, 185);
+}
+
+.searchBarContainer .buttons {
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.searchBarContainer h2 {
+    opacity: 0.95;
+    color: #ffffff;
+    text-align: center;
+}
